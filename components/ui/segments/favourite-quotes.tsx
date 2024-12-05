@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import {
   Carousel,
   CarouselContent,
@@ -31,15 +30,22 @@ const quotes: Quote[] = [
     author: "Jim Rohn",
     date: new Date("2024-12-04"),
   },
+  {
+    id: uuidv4(),
+    quote:
+      "If you muster the strength to weight-lift a car to save a child, above your current capabilities, the strength gained will stay after things calm down",
+    author: "Excerpt from Skin in the Game by Nassim Nicholas Taleb",
+    date: new Date("2024-12-05"),
+  },
 ];
 
 const FavouriteQuotes = () => {
   return (
     <div className="container mx-auto my-8">
-      <h1 className="text-3xl mb-4">
-        Some Quotes I find <TextGradient text="Inspiring" /> and{" "}
-        <TextGradient text="Intriguing" />
-      </h1>
+      <h3 className="text-2xl md:text-4xl font-semibold mb-4">
+        <TextGradient text="Inspiring" /> and <TextGradient text="Intriguing" />{" "}
+        Excepts
+      </h3>
       <Carousel
         opts={{
           align: "start",
@@ -52,9 +58,9 @@ const FavouriteQuotes = () => {
               key={key}
               className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 mx-4"
             >
-              <Card className="w-96">
+              <Card className="">
                 <CardContent className="flex aspect-square items-center justify-center p-6 text-xl">
-                  {quote.quote}
+                  &quot; {quote.quote} &quot;
                 </CardContent>
                 <CardDescription className="text-center text-lg mb-4">
                   {quote.author}

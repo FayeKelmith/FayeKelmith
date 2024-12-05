@@ -69,14 +69,19 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              I love the quote &quot; If you see me in a fight with a bear, pray
-              for the bear&quot; ~ The Black Mamba (Kobe Bryant)
+              My friend (Ekep) comically described me as &quot;You are always
+              that guy who makes his peers feel like they are a failure&quot;
+              Ironically, he is someone more achieving than I am by a mile;
+              someone I deeply respect. The context is good-spirited and I love
+              it.I love it for what it makes of my friends to say so. It
+              reassures me that I am in the <strong>right circle</strong>.
+              People that are forward looking.
             </p>
           </div>
           <div className="flex flex-row gap-3">
             <Link href="https://nordahades.com/" target="_blank" className="">
               <Button size="lg" className="gap-4 text-lg">
-                I Work Here <Pickaxe className="w-4 h-4" />
+                I Grind Here <Pickaxe className="w-4 h-4" />
               </Button>
             </Link>
             {/* <Button size="lg" className="gap-4">

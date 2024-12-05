@@ -8,11 +8,14 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
+import TextGradient from "../wrappers/text-gradient";
 import Link from "next/link";
 const Essays = () => {
   return (
     <div className="mx-auto container w-full">
-      <h2 className="w-fit">I am currently thinking about: </h2>
+      <h3 className="w-fit text-2xl md:text-4xl font-semibold">
+        Epistles to <TextGradient text="Faye Kelmith" />{" "}
+      </h3>
       <div className="my-8 grid gap-4 md::grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardTitle className="my-3 text-center ">
@@ -27,8 +30,8 @@ const Essays = () => {
               className="object-cover h-40"
             />
             <CardDescription className="">
-              In this Essay, I am attempting to walk through how I could
-              optimally have fruitful conversation when they are troubled.
+              In this essay, I am thinking about how I could effectively
+              communicate with someone who is in pain.
             </CardDescription>
           </CardContent>
           <CardFooter className="text-center">

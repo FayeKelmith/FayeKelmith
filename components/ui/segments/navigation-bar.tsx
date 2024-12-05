@@ -14,7 +14,9 @@ const NavBar = () => {
   return (
     <nav className="flex justify-between px-8">
       <h1>
-        <Link href="/">Kelmith</Link>
+        <Link href="/">
+          Kel<span className="text-jade">mith</span>
+        </Link>
       </h1>
 
       <div className="hidden sm:block">
